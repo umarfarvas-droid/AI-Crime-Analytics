@@ -1,0 +1,91 @@
+# ==============================================================================
+# Git Ignore Configuration - AI Crime Analytics System
+# ==============================================================================
+
+# Java / Maven Build Artifacts
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+coverage/
+
+# Node & Frontend Build
+node_modules/
+.next/
+out/
+dist/
+build/
+.vercel/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment Variables & Sensitive Secrets
+.env
+.env.local
+.env.production
+.env.*.local
+*.pem
+*.key
+*.cert
+*.crt
+
+# Keep .env.example safe for repository sharing as configuration template
+!.env.example
+
+# IDE & Editor Configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+*.iml
+.project
+.classpath
+.settings/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Logs & Cache
+*.log
+logs/
+.cache/
+.chroma/
+chroma_db/
+
+# Runtime Generated Files & Databases (Preserve source directory structure)
+uploads/
+reports/
+*.pid
+*.db
+*.mv.db
+*.trace.db
+*.lock.db
+*.sqlite
+*.sqlite3
+data/media/
+data/*.db
+data/*.mv.db
+data/*.trace.db
+data/*.lock.db
+!data/.gitkeep

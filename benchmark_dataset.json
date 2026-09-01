@@ -1,0 +1,470 @@
+[
+  {
+    "id": "CASE-01",
+    "name": "Targeted Homicide at Grandview Villa",
+    "caseType": "HOMICIDE",
+    "locationName": "Grandview Villa, Mumbai",
+    "narrative": "On 15 August 2026 at 11:30 PM, industrialist Suresh Oberoi was found dead inside his private study at Grandview Villa, Mumbai. Forensic doctors confirmed the victim died from severe blunt force trauma. CCTV recorded his former business associate Rajesh Varma entering the main gate at 10:15 PM and leaving hurriedly at 11:10 PM. Rajesh claimed he was attending a dinner banquet in South Mumbai until midnight, but his vehicle tracking records show his car parked outside Grandview Villa between 10:10 PM and 11:12 PM. A broken brass artifact with latent fingerprints and blood stains was recovered near the body. The victim's smartphone was found damaged on the floor. Housekeeper Laxmi Bai reported hearing an aggressive confrontation at 10:45 PM before finding the deceased.",
+    "expected": {
+      "primaryCrime": "Homicide / Targeted Murder",
+      "associatedCrimes": ["Assault", "Physical Violence"],
+      "victims": ["Suresh Oberoi"],
+      "suspects": ["Rajesh Varma"],
+      "witnesses": ["Laxmi Bai"],
+      "organizations": [],
+      "jobTitles": ["Housekeeper", "Business Associate", "Doctor"],
+      "locations": ["Grandview Villa, Mumbai", "Grandview Villa", "Mumbai"],
+      "contradictionSubjects": ["Rajesh Varma"],
+      "expectedEvidenceLinks": {
+        "Vehicle Tracking": "Rajesh Varma",
+        "CCTV": "Rajesh Varma",
+        "Mobile Phone": "Suresh Oberoi"
+      }
+    }
+  },
+  {
+    "id": "CASE-02",
+    "name": "Metropolitan Heights Executive Suite Homicide",
+    "caseType": "HOMICIDE",
+    "locationName": "Metropolitan Heights",
+    "narrative": "Rohan Malhotra, a 32-year-old company executive, was found dead inside his apartment at Metropolitan Heights at approximately 10:15 PM on 19 August 2026. His business partner Vikram Rao had a financial dispute with him over a pending transaction and was reportedly seen arguing with the victim at 8:30 PM. The victim's wife Neha Malhotra claimed that she left the apartment at 8:45 PM to visit her sister and returned at approximately 10:20 PM. CCTV footage showed Arjun Das, a former employee who had recently been dismissed by the victim, entering the apartment building at 9:18 PM and leaving at 9:56 PM. Security contractor Sameer Khan stated that he remained inside the security room throughout the evening, but access-control records showed that his security card was used to enter the victim's floor at 9:42 PM. A neighbour reported hearing a loud argument from the apartment at approximately 9:35 PM followed by the sound of breaking glass. Investigators found a broken glass near the victim, blood stains on the living-room floor, partial fingerprints on the glass, and CCTV footage showing an unidentified person leaving the building shortly before 10:00 PM. The victim's mobile phone and a confidential business file were also missing from the apartment.",
+    "expected": {
+      "primaryCrime": "Homicide / Targeted Murder",
+      "associatedCrimes": ["Corporate Crime", "Physical Violence"],
+      "victims": ["Rohan Malhotra"],
+      "suspects": ["Vikram Rao", "Neha Malhotra", "Arjun Das", "Sameer Khan"],
+      "witnesses": [],
+      "organizations": [],
+      "jobTitles": ["Company Executive", "Business Partner", "Security Contractor", "Employee"],
+      "locations": ["Metropolitan Heights"],
+      "contradictionSubjects": ["Sameer Khan"],
+      "expectedEvidenceLinks": {
+        "Access Card": "Sameer Khan",
+        "CCTV": "Arjun Das",
+        "Mobile Phone": "Rohan Malhotra"
+      }
+    }
+  },
+  {
+    "id": "CASE-03",
+    "name": "Armed Commercial Vault Robbery",
+    "caseType": "ROBBERY",
+    "locationName": "Central Vault Facility, New Delhi",
+    "narrative": "On 10 July 2026 at 09:15 AM, three masked perpetrators armed with semi-automatic weapons breached the Central Vault Facility in New Delhi and stole ₹12 crore in currency reserves. Vault technician Robert Chen was threatened at gunpoint and forced to unlock the inner reinforced gate. Security guard Leo Torres stated that he was patrolling the upper floor between 09:00 AM and 09:30 AM, but corridor CCTV cameras showed him disabling the magnetic door lock at 09:12 AM. Suspect Marcus Vance was identified from exterior surveillance footage getting into a black getaway van with stolen registration plates. Forensic technicians recovered discarded ballistic ammunition shells, fiber fragments from dark overalls, and an encrypted walkie-talkie dropped near the vault bypass terminal. Eyewitness driver Sunita Rao reported seeing the black van speed toward the ring road at 09:28 AM.",
+    "expected": {
+      "primaryCrime": "Armed Robbery / Commercial Vault Heist",
+      "associatedCrimes": ["Weapons Offense", "Commercial Theft"],
+      "victims": ["Robert Chen"],
+      "suspects": ["Leo Torres", "Marcus Vance"],
+      "witnesses": ["Sunita Rao"],
+      "organizations": [],
+      "jobTitles": ["Vault Technician", "Security Guard", "Driver"],
+      "locations": ["Central Vault Facility, New Delhi", "Central Vault Facility", "New Delhi"],
+      "contradictionSubjects": ["Leo Torres"],
+      "expectedEvidenceLinks": {
+        "CCTV": "Leo Torres",
+        "Vehicle Tracking": "Marcus Vance"
+      }
+    }
+  },
+  {
+    "id": "CASE-04",
+    "name": "Metropolitan Bank Corporate Ransomware Attack",
+    "caseType": "CYBER_CRIME",
+    "locationName": "Metropolitan Business Park, Chennai, Tamil Nadu",
+    "narrative": "On 19 August 2026 at approximately 9:20 AM, employees at Metropolitan Bank located at Metropolitan Business Park, Chennai, Tamil Nadu discovered that core financial database files had been encrypted with a ransom note demanding 75 Bitcoin sent to a cryptocurrency wallet address. Systems administrator Rahul Menon detected unusual external IP login activity at 8:45 AM from an unauthorized IP address attempting administrator-level access. Priya Nair, an IT operations specialist, claimed she was working in the server room from 8:30 AM to 10:00 AM, but electronic access-control records showed her employee card was used to enter the restricted backup server room at 9:05 AM where critical PowerShell commands were executed. CCTV footage recorded an unknown person entering the restricted server area at 9:02 AM. Furthermore, forensic logs revealed that a remote-access account belonging to former system administrator Arjun Kumar, who had recently resigned under contentious circumstances, remained active and was used to execute unauthorized network traffic commands during the intrusion window.",
+    "expected": {
+      "primaryCrime": "Cybercrime / Corporate Ransomware Attack",
+      "associatedCrimes": ["Extortion", "Unauthorized Access"],
+      "victims": [],
+      "suspects": ["Priya Nair", "Arjun Kumar"],
+      "witnesses": ["Rahul Menon"],
+      "organizations": ["Metropolitan Bank"],
+      "jobTitles": ["Systems Administrator", "IT Operations Specialist", "System Administrator"],
+      "locations": ["Metropolitan Business Park, Chennai, Tamil Nadu", "Metropolitan Business Park", "Chennai", "Tamil Nadu"],
+      "contradictionSubjects": ["Priya Nair"],
+      "expectedEvidenceLinks": {
+        "Access Card": "Priya Nair",
+        "VPN Logs": "Arjun Kumar",
+        "IP Address": "Arjun Kumar"
+      }
+    }
+  },
+  {
+    "id": "CASE-05",
+    "name": "Kidnapping of Industrialist Heir",
+    "caseType": "KIDNAPPING",
+    "locationName": "Sector 42 Business Hub, Gurugram",
+    "narrative": "On 12 August 2026 at 06:45 PM, 24-year-old Arvind Mehra was kidnapped while walking to his parked car outside Sector 42 Business Hub in Gurugram. Two masked assailants forced him into an unmarked silver SUV and fled toward the highway. At 07:30 PM, the victim's father received an extortion call demanding ₹5 crore in cash. Chauffeur Mohan Lal claimed he was waiting at the garage until 07:15 PM, but highway toll booth cameras recorded his personal phone pinging in convoy with the silver SUV at 07:05 PM. Suspect Devendra Yadav, a former bodyguard dismissed for misconduct, had sent threatening voice notes to the family two days earlier. Traffic CCTV captured the SUV license plate, and forensic officers recovered Arvind's dropped wristwatch and a chloroform-soaked cloth at the parking scene. Bystander Anita Verma witnessed the abduction and alerted security.",
+    "expected": {
+      "primaryCrime": "Kidnapping / Abduction & Extortion",
+      "associatedCrimes": ["Extortion", "Assault"],
+      "victims": ["Arvind Mehra"],
+      "suspects": ["Mohan Lal", "Devendra Yadav"],
+      "witnesses": ["Anita Verma"],
+      "organizations": [],
+      "jobTitles": ["Chauffeur", "Bodyguard"],
+      "locations": ["Sector 42 Business Hub, Gurugram", "Gurugram"],
+      "contradictionSubjects": ["Mohan Lal"],
+      "expectedEvidenceLinks": {
+        "Mobile Records": "Mohan Lal",
+        "Threat Messages": "Devendra Yadav",
+        "Physical Evidence": "Arvind Mehra"
+      }
+    }
+  },
+  {
+    "id": "CASE-06",
+    "name": "Zenith Global Finance Multi-Crore Embezzlement",
+    "caseType": "FINANCIAL_FRAUD",
+    "locationName": "Zenith Towers, Bandra Kurla Complex, Mumbai",
+    "narrative": "On 05 August 2026, Zenith Global Finance reported a systematic financial embezzlement of ₹25 crore routed through shell accounts across foreign jurisdictions. Internal auditor Sanjay Singhania discovered falsified balance sheets created under the digital signature of Senior Accountant Deepak Verma. Deepak claimed he never accessed the treasury portal after 05:00 PM on 03 August, but firewall audit logs revealed his authenticated workstation transferred ₹10 crore at 09:30 PM that evening. Chief Financial Officer Alok Nanda had flagged irregular off-book transactions with Apex Holdings Corporation. Investigators seized encrypted hard drives from Deepak's desk, falsified banking ledgers, and wire transfer slips authorizing offshore remittances. Compliance officer Pooja Hegde reported the unauthorized fund deviations to the national economic offenses wing.",
+    "expected": {
+      "primaryCrime": "Financial Fraud & Corporate Embezzlement",
+      "associatedCrimes": ["Corporate Crime", "Forgery"],
+      "victims": [],
+      "suspects": ["Deepak Verma"],
+      "witnesses": ["Sanjay Singhania", "Pooja Hegde"],
+      "organizations": ["Zenith Global Finance", "Apex Holdings Corporation"],
+      "jobTitles": ["Chief Financial Officer", "Internal Auditor", "Senior Accountant", "Compliance Officer"],
+      "locations": ["Zenith Towers, Bandra Kurla Complex, Mumbai", "Mumbai"],
+      "contradictionSubjects": ["Deepak Verma"],
+      "expectedEvidenceLinks": {
+        "Server Logs": "Deepak Verma",
+        "Financial Records": "Deepak Verma"
+      }
+    }
+  },
+  {
+    "id": "CASE-07",
+    "name": "High-Precision Museum Diamond Heist",
+    "caseType": "THEFT",
+    "locationName": "Heritage Museum Gallery, Kolkata",
+    "narrative": "On 22 July 2026 at 02:30 AM, rare diamond jewelry valued at ₹15 crore was stolen from the high-security display vault of Heritage Museum Gallery in Kolkata. The laser motion sensors on the second floor were disabled using an insider security override code. Curator Dr. Anirudh Sen reported the missing artifacts at 06:00 AM. Night guard Tarun Ghosh claimed he never left the main entrance station all night, but electronic turnstile records showed his access badge unlocked the gallery service door at 02:18 AM. Surveillance cameras captured a figure in specialized climbing gear known as suspect Kabir Roy scaling the eastern ventilation shaft. Forensic examiners collected glass cutter tools, a severed security wire, and footwear impressions matching European tactical boots.",
+    "expected": {
+      "primaryCrime": "Commercial Theft / Museum Heist",
+      "associatedCrimes": ["Burglary", "Trespass"],
+      "victims": [],
+      "suspects": ["Tarun Ghosh", "Kabir Roy"],
+      "witnesses": ["Anirudh Sen"],
+      "organizations": [],
+      "jobTitles": ["Curator", "Night Guard", "Doctor"],
+      "locations": ["Heritage Museum Gallery, Kolkata", "Kolkata"],
+      "contradictionSubjects": ["Tarun Ghosh"],
+      "expectedEvidenceLinks": {
+        "Access Card": "Tarun Ghosh",
+        "CCTV": "Kabir Roy"
+      }
+    }
+  },
+  {
+    "id": "CASE-08",
+    "name": "Aggravated Nightclub Assault",
+    "caseType": "ASSAULT",
+    "locationName": "Club Obsidian, Koregaon Park, Pune",
+    "narrative": "On 02 August 2026 at 01:15 AM, 28-year-old software engineer Varun Saxena was severely assaulted and injured in the VIP lounge corridor of Club Obsidian in Koregaon Park, Pune. The victim sustained multiple stab wounds and blunt trauma injuries requiring emergency intensive care. Bouncer Rakesh Patil claimed he was managing the ground floor entry between 01:00 AM and 01:30 AM, but internal hallway CCTV captured him pinning the victim against the wall while suspect Nikhil Deshmukh struck Varun with an edged tactical blade at 01:14 AM. Nikhil had been involved in an altercation with Varun earlier that evening regarding an unpaid gambling debt. Police recovered a bloodstained folding knife from the lounge dumpster and seized CCTV DVR hard drives. Bartender Meenakshi Joshi provided a witness statement detailing the initial verbal threat made by Nikhil.",
+    "expected": {
+      "primaryCrime": "Assault / Physical Violence",
+      "associatedCrimes": ["Weapons Offense", "Battery"],
+      "victims": ["Varun Saxena"],
+      "suspects": ["Rakesh Patil", "Nikhil Deshmukh"],
+      "witnesses": ["Meenakshi Joshi"],
+      "organizations": [],
+      "jobTitles": ["Software Engineer", "Bouncer", "Bartender"],
+      "locations": ["Club Obsidian, Koregaon Park, Pune", "Pune"],
+      "contradictionSubjects": ["Rakesh Patil"],
+      "expectedEvidenceLinks": {
+        "CCTV": "Rakesh Patil",
+        "Weapon": "Nikhil Deshmukh",
+        "Blood Evidence": "Varun Saxena"
+      }
+    }
+  },
+  {
+    "id": "CASE-09",
+    "name": "Commercial Logistics Warehouse Burglary",
+    "caseType": "BURGLARY",
+    "locationName": "Alpha Logistics Hub, Kanchipuram, Tamil Nadu",
+    "narrative": "On 14 July 2026 at 03:45 AM, suspects forced entry into Alpha Logistics Hub in Kanchipuram, Tamil Nadu and stole imported semiconductor shipments worth ₹8 crore. The heavy iron shutters were breached using industrial hydraulic cutting equipment. Warehouse manager David Paul discovered the break-in at 07:00 AM. Night shift supervisor Harish Chandra claimed he completed exterior rounds at 03:30 AM and found all locks intact, but electronic perimeter sensors recorded the security fence alarm was manually muted using Harish's master pin code at 03:22 AM. CCTV showed a commercial cargo truck driven by suspect Mani Ratnam leaving the loading dock at 04:10 AM. Police recovered hydraulic cutting torches, heavy tire tracks, and discarded security tags from the scene.",
+    "expected": {
+      "primaryCrime": "Burglary / Forced Warehouse Ingress",
+      "associatedCrimes": ["Commercial Theft", "Property Damage"],
+      "victims": [],
+      "suspects": ["Harish Chandra", "Mani Ratnam"],
+      "witnesses": ["David Paul"],
+      "organizations": [],
+      "jobTitles": ["Warehouse Manager", "Supervisor"],
+      "locations": ["Alpha Logistics Hub, Kanchipuram, Tamil Nadu", "Kanchipuram", "Tamil Nadu"],
+      "contradictionSubjects": ["Harish Chandra"],
+      "expectedEvidenceLinks": {
+        "Access Control": "Harish Chandra",
+        "CCTV": "Mani Ratnam"
+      }
+    }
+  },
+  {
+    "id": "CASE-10",
+    "name": "Digital Blackmail and Extortion Scheme",
+    "caseType": "EXTORTION",
+    "locationName": "Cyber City Phase 2, Hyderabad",
+    "narrative": "On 28 July 2026, technology executive Kavita Rao reported receiving extortion threats from an anonymous hacker group demanding ₹3 crore in cryptocurrency under threat of publishing compromised personal photographs and company trade secrets. Forensic cybersecurity investigators traced the extortion emails to an external IP originating from suspect Yash Kulkarni, a former IT systems contractor who had been terminated for security policy violations. Yash claimed he was in Bengaluru during the entire week of the extortion campaign, but cellular tower location records placed his active mobile device in Cyber City Phase 2, Hyderabad during the email transmission timestamps. Investigators seized laptops containing the victim's leaked files, encrypted Tor browser communication logs, and bitcoin wallet addresses configured to receive the ransom funds. Security analyst Rohan Varma assisted in isolating the malicious email headers.",
+    "expected": {
+      "primaryCrime": "Extortion / Digital Blackmail & Cyber Coercion",
+      "associatedCrimes": ["Cybercrime", "Unauthorized Access"],
+      "victims": ["Kavita Rao"],
+      "suspects": ["Yash Kulkarni"],
+      "witnesses": ["Rohan Varma"],
+      "organizations": [],
+      "jobTitles": ["Technology Executive", "Systems Contractor", "Security Analyst"],
+      "locations": ["Cyber City Phase 2, Hyderabad", "Hyderabad", "Bengaluru"],
+      "contradictionSubjects": ["Yash Kulkarni"],
+      "expectedEvidenceLinks": {
+        "Mobile Records": "Yash Kulkarni",
+        "IP Address": "Yash Kulkarni",
+        "Digital Storage": "Yash Kulkarni"
+      }
+    }
+  },
+  {
+    "id": "CASE-11",
+    "name": "Multi-Layer Crime: Kidnapping and Cyber Extortion",
+    "caseType": "KIDNAPPING",
+    "locationName": "Tech Park Boulevard, Bengaluru",
+    "narrative": "On 18 August 2026, pharmaceutical CEO Vijay Singhal was abducted and kidnapped outside his office at Tech Park Boulevard, Bengaluru at 07:00 PM. Simultaneously at 07:45 PM, the company's research database was encrypted with ransomware demanding ₹20 crore for both Vijay's release and the decryption key. CCTV recorded suspect Kiran Bedi forcing Vijay into a dark sedan. Systems engineer Chetan Bhagat claimed he was home all evening, but company VPN logs showed his account initiated the database encryption payload at 07:42 PM using compromised administrator privileges. Vijay's executive assistant Shalini Roy received the ransom email and immediately notified law enforcement. Police recovered Vijay's abandoned briefcase, vehicle dashcam video, and malicious PowerShell execution logs from the server room.",
+    "expected": {
+      "primaryCrime": "Kidnapping / Cyber Extortion & Ransomware",
+      "associatedCrimes": ["Cybercrime", "Ransomware", "Extortion", "Assault"],
+      "victims": ["Vijay Singhal"],
+      "suspects": ["Kiran Bedi", "Chetan Bhagat"],
+      "witnesses": ["Shalini Roy"],
+      "organizations": [],
+      "jobTitles": ["Chief Executive Officer", "Systems Engineer", "Executive Assistant"],
+      "locations": ["Tech Park Boulevard, Bengaluru", "Bengaluru"],
+      "contradictionSubjects": ["Chetan Bhagat"],
+      "expectedEvidenceLinks": {
+        "CCTV": "Kiran Bedi",
+        "VPN Logs": "Chetan Bhagat",
+        "Physical Evidence": "Vijay Singhal"
+      }
+    }
+  },
+  {
+    "id": "CASE-12",
+    "name": "Cold Case Unsolved Ingress (Zero Suspects)",
+    "caseType": "BURGLARY",
+    "locationName": "North Avenue Industrial Estate, Delhi",
+    "narrative": "On 04 June 2026 at 04:00 AM, an unknown intruder entered the vacant office warehouse at North Avenue Industrial Estate in Delhi through a shattered skylight. Cash and laptops worth ₹3 lakh were stolen. Security guard Ram Lal found the broken glass at 06:30 AM. No persons were seen or identified in the area, and no employee names or suspects are currently known. Forensic officers recovered smudged glove marks, broken glass fragments, and cut copper wiring from the circuit breaker box. The investigation remains open to identify potential leads.",
+    "expected": {
+      "primaryCrime": "Burglary / Forced Warehouse Ingress",
+      "associatedCrimes": ["Theft"],
+      "victims": [],
+      "suspects": [],
+      "witnesses": ["Ram Lal"],
+      "organizations": [],
+      "jobTitles": ["Security Guard"],
+      "locations": ["North Avenue Industrial Estate, Delhi", "Delhi"],
+      "contradictionSubjects": [],
+      "expectedEvidenceLinks": {}
+    }
+  },
+  {
+    "id": "CASE-13",
+    "name": "Multi-Suspect Coordinated Heist Syndicate",
+    "caseType": "ROBBERY",
+    "locationName": "Apex Bullion Depository, Ahmedabad, Gujarat",
+    "narrative": "On 16 August 2026 at 08:30 PM, a coordinated four-person criminal syndicate robbed the Apex Bullion Depository in Ahmedabad, Gujarat, looting ₹10 crore in gold bars. Ring leader Ajay Malik organized the heist and disabled the perimeter alarm. Inside operative Farhan Qureshi unlocked the electronic vault doors at 08:45 PM using unauthorized override codes. Farhan claimed he was locked in the restroom during the incident, but access badge logs proved his card opened the vault door at 08:44 PM. Transport driver Sunny Deol parked the getaway truck in the alley at 08:50 PM. Tech specialist Nitin Gadkari jammed cellular frequencies in the area from 08:20 PM to 09:10 PM. Depository manager Ramesh Patel reported the robbery to police at 09:15 PM.",
+    "expected": {
+      "primaryCrime": "Armed Robbery / Commercial Vault Heist",
+      "associatedCrimes": ["Commercial Theft", "Conspiracy"],
+      "victims": [],
+      "suspects": ["Ajay Malik", "Farhan Qureshi", "Sunny Deol", "Nitin Gadkari"],
+      "witnesses": ["Ramesh Patel"],
+      "organizations": [],
+      "jobTitles": ["Tech Specialist", "Driver", "Depository Manager"],
+      "locations": ["Apex Bullion Depository, Ahmedabad, Gujarat", "Ahmedabad", "Gujarat"],
+      "contradictionSubjects": ["Farhan Qureshi"],
+      "expectedEvidenceLinks": {
+        "Access Card": "Farhan Qureshi",
+        "Vehicle Tracking": "Sunny Deol"
+      }
+    }
+  },
+  {
+    "id": "CASE-14",
+    "name": "Double Homicide at Seaside Residence",
+    "caseType": "HOMICIDE",
+    "locationName": "Seaside Residence, Chennai, Tamil Nadu",
+    "narrative": "On 11 August 2026 at 10:00 PM, businessman Rajiv Mehra and his wife Sunita Mehra were found dead inside their living room at Seaside Residence, Chennai, Tamil Nadu. Both victims had suffered fatal gunshot wounds. The couple's estranged nephew Amit Mehra was seen arguing with Rajiv over property inheritance at 08:30 PM. Amit claimed he was at a cinema hall in central Chennai between 08:00 PM and 11:00 PM, but cinema digital ticket records showed his booking was canceled at 07:45 PM and his car was detected on toll cameras near Seaside Residence at 09:15 PM. Police recovered a 9mm firearm with Amit's fingerprints, two spent bullet casings, and blood stains on the carpet. Housekeeper Mary Fernandez discovered the bodies at 10:00 PM.",
+    "expected": {
+      "primaryCrime": "Homicide / Targeted Murder",
+      "associatedCrimes": ["Weapons Offense", "Physical Violence"],
+      "victims": ["Rajiv Mehra", "Sunita Mehra"],
+      "suspects": ["Amit Mehra"],
+      "witnesses": ["Mary Fernandez"],
+      "organizations": [],
+      "jobTitles": ["Businessman", "Housekeeper"],
+      "locations": ["Seaside Residence, Chennai, Tamil Nadu", "Chennai", "Tamil Nadu"],
+      "contradictionSubjects": ["Amit Mehra"],
+      "expectedEvidenceLinks": {
+        "Weapon": "Amit Mehra",
+        "Vehicle Tracking": "Amit Mehra",
+        "Blood Evidence": "Rajiv Mehra"
+      }
+    }
+  },
+  {
+    "id": "CASE-15",
+    "name": "Multi-Location Smuggling Operation",
+    "caseType": "THEFT",
+    "locationName": "Harbor Terminal Gate 4, Chennai Port",
+    "narrative": "On 08 August 2026, customs officers uncovered an illegal contraband smuggling ring operating across Harbor Terminal Gate 4 at Chennai Port, an off-site warehouse in Ennore, and a corporate office in Nungambakkam. Shipping agent Vijay Mallya coordinated illicit container movements. Container yard supervisor Prakash Raj claimed container 4022 was inspected and cleared at the port at 02:00 PM, but port RFID tracking logs show the container was diverted directly to the Ennore warehouse at 01:30 PM without clearance. Suspect Mohan Babu was arrested unloading illicit goods at the warehouse. Customs inspector K. Raman initiated the seizure of falsified manifest documents and GPS tracking devices.",
+    "expected": {
+      "primaryCrime": "Commercial Theft / Contraband Smuggling",
+      "associatedCrimes": ["Corporate Crime", "Forgery"],
+      "victims": [],
+      "suspects": ["Vijay Mallya", "Prakash Raj", "Mohan Babu"],
+      "witnesses": ["K. Raman"],
+      "organizations": [],
+      "jobTitles": ["Shipping Agent", "Supervisor", "Customs Inspector"],
+      "locations": ["Harbor Terminal Gate 4, Chennai Port", "Ennore", "Nungambakkam", "Chennai"],
+      "contradictionSubjects": ["Prakash Raj"],
+      "expectedEvidenceLinks": {
+        "RFID Logs": "Prakash Raj",
+        "Vehicle Tracking": "Prakash Raj"
+      }
+    }
+  },
+  {
+    "id": "CASE-16",
+    "name": "Corporate Espionage between Rival Tech Giants",
+    "caseType": "CYBER_CRIME",
+    "locationName": "Zenith Global Labs, Gurugram",
+    "narrative": "On 01 August 2026, Zenith Global Labs reported the theft of proprietary AI algorithm blueprints by rival firm ABC Corporation. Lead developer Sandeep Varma was caught downloading 500GB of source code onto encrypted flash drives at 11:30 PM. Sandeep claimed his workstation was infected with malware and operating autonomously, but network packet inspection records proved he manually authenticated using his personal multi-factor hardware key at 11:28 PM. ABC Corporation executive Vikram Seth had promised Sandeep a senior director position in exchange for the trade secrets. Cyber forensic investigator Tanvi Shah recovered the encrypted flash drives, email communication threads between Sandeep and Vikram, and authentication logs.",
+    "expected": {
+      "primaryCrime": "Cybercrime / Corporate Espionage & IP Theft",
+      "associatedCrimes": ["Corporate Crime", "Unauthorized Access"],
+      "victims": [],
+      "suspects": ["Sandeep Varma", "Vikram Seth"],
+      "witnesses": ["Tanvi Shah"],
+      "organizations": ["Zenith Global Labs", "ABC Corporation"],
+      "jobTitles": ["Lead Developer", "Director", "Cyber Forensic Investigator"],
+      "locations": ["Zenith Global Labs, Gurugram", "Gurugram"],
+      "contradictionSubjects": ["Sandeep Varma"],
+      "expectedEvidenceLinks": {
+        "Server Logs": "Sandeep Varma",
+        "Emails": "Vikram Seth"
+      }
+    }
+  },
+  {
+    "id": "CASE-17",
+    "name": "Hospital Medical Device Tampering Homicide",
+    "caseType": "HOMICIDE",
+    "locationName": "City Life Hospital ICU, Bengaluru",
+    "narrative": "On 29 July 2026 at 03:00 AM, politician Harsh Vardhan died inside City Life Hospital ICU in Bengaluru after his life-support ventilator was deliberately switched off. Chief Medical Officer Dr. Radhika Sen discovered the ventilator power disconnect at 03:15 AM. ICU nurse Anjali Sharma claimed she was administering medication in Room 4 from 02:30 AM to 03:15 AM, but smart hospital badge records showed her electronic keycard was used to enter the victim's ICU suite at 02:52 AM. Suspect Gaurav Kapoor, a political rival with substantial financial interests, had made multiple phone calls to Anjali preceding the incident. Investigators seized hospital badge logs, CCTV recordings from the corridor, and ICU telemetry data.",
+    "expected": {
+      "primaryCrime": "Homicide / Targeted Murder",
+      "associatedCrimes": ["Physical Violence", "Conspiracy"],
+      "victims": ["Harsh Vardhan"],
+      "suspects": ["Anjali Sharma", "Gaurav Kapoor"],
+      "witnesses": ["Radhika Sen"],
+      "organizations": ["City Life Hospital"],
+      "jobTitles": ["Chief Medical Officer", "Doctor", "Nurse"],
+      "locations": ["City Life Hospital ICU, Bengaluru", "Bengaluru"],
+      "contradictionSubjects": ["Anjali Sharma"],
+      "expectedEvidenceLinks": {
+        "Access Card": "Anjali Sharma",
+        "Mobile Records": "Gaurav Kapoor"
+      }
+    }
+  },
+  {
+    "id": "CASE-18",
+    "name": "Luxury Car Dealership Arson and Insurance Fraud",
+    "caseType": "FINANCIAL_FRAUD",
+    "locationName": "Royale Motors Showroom, Pune",
+    "narrative": "On 17 July 2026 at 02:00 AM, a massive fire destroyed Royale Motors Showroom in Pune, causing ₹14 crore in damages to luxury vehicles. Dealership owner Rajesh Bajaj filed an insurance claim for ₹18 crore the next morning. General Manager Suresh Pillai claimed the fire was caused by an electrical short circuit, but fire department forensic reports identified traces of synthetic chemical accelerants on the showroom floor. CCTV recordings showed mechanic Sonu Kadam pouring liquid from a container at 01:45 AM before fleeing. Financial audit revealed Rajesh Bajaj was facing bankruptcy and had signed a private contract with Sonu three days prior. Fire investigator Anand Joshi submitted chemical analysis reports.",
+    "expected": {
+      "primaryCrime": "Financial Fraud & Arson Scheme",
+      "associatedCrimes": ["Property Damage", "Corporate Crime"],
+      "victims": [],
+      "suspects": ["Rajesh Bajaj", "Sonu Kadam"],
+      "witnesses": ["Suresh Pillai", "Anand Joshi"],
+      "organizations": ["Royale Motors Showroom", "Royale Motors"],
+      "jobTitles": ["Dealership Owner", "General Manager", "Mechanic", "Fire Investigator"],
+      "locations": ["Royale Motors Showroom, Pune", "Pune"],
+      "contradictionSubjects": ["Suresh Pillai"],
+      "expectedEvidenceLinks": {
+        "CCTV": "Sonu Kadam",
+        "Forensic Report": "Rajesh Bajaj"
+      }
+    }
+  },
+  {
+    "id": "CASE-19",
+    "name": "Bank Cash Transit Armored Vehicle Ambush",
+    "caseType": "ROBBERY",
+    "locationName": "Highway Bypass Junction 14, Noida",
+    "narrative": "On 25 July 2026 at 04:30 PM, an armored cash transport vehicle belonging to SecureTrans Logistics was ambushed by armed assailants at Highway Bypass Junction 14 in Noida. ₹6 crore in banknotes was looted. Armed driver Balwant Singh claimed the vehicle engine stalled spontaneously at 04:25 PM, but mechanical forensic inspection proved the fuel line had been deliberately disconnected from the inside cabin using a valve wrench before departure. Suspect Jagdish Tyagi was identified driving the blocking truck. Security guard Satish Kumar was injured during the exchange. Eyewitness commuter Rekha Gupta reported seeing three armed men transfer the money boxes into a getaway SUV.",
+    "expected": {
+      "primaryCrime": "Armed Robbery / Cash Transit Ambush",
+      "associatedCrimes": ["Weapons Offense", "Commercial Theft", "Assault"],
+      "victims": ["Satish Kumar"],
+      "suspects": ["Balwant Singh", "Jagdish Tyagi"],
+      "witnesses": ["Rekha Gupta"],
+      "organizations": ["SecureTrans Logistics"],
+      "jobTitles": ["Driver", "Security Guard"],
+      "locations": ["Highway Bypass Junction 14, Noida", "Noida"],
+      "contradictionSubjects": ["Balwant Singh"],
+      "expectedEvidenceLinks": {
+        "Physical Evidence": "Balwant Singh",
+        "Vehicle Tracking": "Jagdish Tyagi"
+      }
+    }
+  },
+  {
+    "id": "CASE-20",
+    "name": "Executive Job Titles & Corporate Boardroom Extortion",
+    "caseType": "EXTORTION",
+    "locationName": "Apex Financial Tower, Chennai",
+    "narrative": "On 06 August 2026, Chief Executive Officer Aditya Singhania and Chief Financial Officer Rajiv Kapoor received an anonymous extortion threat targeting Apex Global Technologies. The threat actor demanded ₹8 crore under threat of erasing core cloud databases. Senior System Administrator Vijay Raghavan claimed he never touched database backup servers during the critical night, but system log files revealed his privileged root access account was active at 02:15 AM executing deletion scripts. Cybersecurity Analyst Deepak Joshi assisted in isolating the malicious commands. Managing Director Meera Nambiar authorized the police investigation.",
+    "expected": {
+      "primaryCrime": "Extortion / Digital Blackmail & Cyber Coercion",
+      "associatedCrimes": ["Cybercrime", "Unauthorized Access"],
+      "victims": [],
+      "suspects": ["Vijay Raghavan"],
+      "witnesses": ["Deepak Joshi", "Meera Nambiar"],
+      "organizations": ["Apex Global Technologies"],
+      "jobTitles": ["Chief Executive Officer", "CEO", "Chief Financial Officer", "CFO", "Senior System Administrator", "Cybersecurity Analyst", "Managing Director"],
+      "locations": ["Apex Financial Tower, Chennai", "Chennai"],
+      "contradictionSubjects": ["Vijay Raghavan"],
+      "expectedEvidenceLinks": {
+        "Server Logs": "Vijay Raghavan"
+      }
+    }
+  },
+  {
+    "id": "CASE-21",
+    "name": "Phantom Ledger – Multi-Layer Corporate Crime Benchmark",
+    "caseType": "HOMICIDE",
+    "locationName": "Chennai Financial District, Chennai, Tamil Nadu",
+    "narrative": "On 19 August 2026, Meridian Capital Technologies reported a suspected coordinated criminal operation involving the death of its Chief Financial Officer, Daniel Mathews, unauthorized access to the company's financial servers, and the disappearance of approximately ₹18 crore in corporate funds. Daniel Mathews was found unconscious inside a restricted executive conference room at 11:40 PM and was later declared deceased by emergency medical personnel. CCTV records showed that Daniel entered the building at 8:15 PM, followed by his business partner Vikram Rao at 8:42 PM and cybersecurity administrator Aisha Rahman at 9:05 PM. Aisha stated that she remained inside the network operations centre throughout the night, but access-control records show her employee credentials were used to enter the executive floor at 9:37 PM. At 9:45 PM, the company's financial database recorded an administrator-level login from an external IP address, followed by the transfer of ₹18 crore through multiple accounts. Former systems engineer Arjun Kumar, who resigned six weeks earlier after a dispute with the company, still had an active remote-access credential that was used at 9:52 PM. Security officer Sameer Khan claimed that he left the building at 9:20 PM, but parking records show his vehicle remained inside the premises until 11:15 PM. At approximately 10:05 PM, a journalist named Meera Iyer received an anonymous encrypted email containing confidential company documents and a cryptocurrency wallet address. At 10:30 PM, a fire alarm was triggered on the basement floor, temporarily disabling one section of the building's CCTV system. Investigators later found a broken access card, traces of blood on a conference-room table, Daniel's damaged mobile phone, and a USB storage device hidden inside a maintenance cabinet. The USB contained encrypted financial records and a deleted video file that forensic investigators are attempting to recover. Daniel's business partner Vikram Rao reported that Daniel had threatened to expose financial irregularities within the company two days before his death. Meanwhile, Daniel's assistant Priya Nair stated that she left the building at 9:10 PM, but a ride-booking record places her near the building again at approximately 10:25 PM. Investigators also discovered that the cryptocurrency wallet mentioned in the anonymous email had received funds from an account previously associated with Arjun Kumar. A preliminary forensic examination indicates that some fingerprints found on the conference-room table may have been deliberately transferred from another object. Investigators suspect that the incident may involve an insider conspiracy, financial fraud, unauthorized cyber access, staged physical evidence, and an attempt to eliminate a person who possessed information about the company's financial activities. The investigation is continuing across digital forensics, financial records, CCTV footage, access-control systems, witness statements, mobile-device data, and recovered physical evidence.",
+    "expected": {
+      "primaryCrime": "Homicide / Targeted Murder",
+      "associatedCrimes": ["Cybercrime", "Financial Fraud", "Corporate Crime"],
+      "victims": ["Daniel Mathews"],
+      "suspects": ["Aisha Rahman", "Arjun Kumar", "Meera Iyer", "Sameer Khan", "Priya Nair", "Vikram Rao"],
+      "witnesses": [],
+      "organizations": ["Meridian Capital Technologies"],
+      "jobTitles": ["Chief Financial Officer", "Cybersecurity Administrator", "Systems Engineer", "Security Officer", "Journalist", "Assistant"],
+      "locations": ["Chennai Financial District, Chennai, Tamil Nadu", "Chennai", "Tamil Nadu"],
+      "contradictionSubjects": ["Aisha Rahman", "Sameer Khan", "Priya Nair"],
+      "expectedEvidenceLinks": {
+        "Access Card": "Aisha Rahman",
+        "IP Address": "Arjun Kumar",
+        "Mobile Phone": "Daniel Mathews",
+        "Vehicle Tracking": "Sameer Khan"
+      }
+    }
+  }
+]

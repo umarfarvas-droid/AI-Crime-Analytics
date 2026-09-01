@@ -1,0 +1,26 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+  
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:crime_analytics}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:}
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 10
+
+logging:
+  level:
+    root: WARN
+    com.crime.analytics: INFO
+  file: /var/log/ai-crime-analytics/application.log
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:}
+  
+  security:
+    allowed-origins: ${ALLOWED_ORIGINS:}
