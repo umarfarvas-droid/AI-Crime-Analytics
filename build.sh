@@ -50,7 +50,12 @@ echo "=========================================="
 echo ""
 
 # If build successful, show output
-if [ -f "target/ai-crime-analytics-1.0.0.jar" ]; then
+if [ -f "backend/target/ai-crime-analytics-1.0.0.jar" ]; then
+    echo "JAR file created at: backend/target/ai-crime-analytics-1.0.0.jar"
+    echo ""
+    echo "To run locally:"
+    echo "  java -jar backend/target/ai-crime-analytics-1.0.0.jar"
+elif [ -f "target/ai-crime-analytics-1.0.0.jar" ]; then
     echo "JAR file created at: target/ai-crime-analytics-1.0.0.jar"
     echo ""
     echo "To run locally:"

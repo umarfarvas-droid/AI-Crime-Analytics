@@ -1,4 +1,4 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const API_URL = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080").replace(/\/api$/, "");
 
 class ApiClient {
   private getToken(): string | null {
@@ -32,11 +32,18 @@ class ApiClient {
   }
 
   // Auth
-  login = (email: string, password: string) =>
-    this.request<{ access_token: string; refresh_token: string }>("/auth/login", {
+  login = async (email: string, password: string) => {
+    const res = await this.request<{ access_token?: string; token?: string; refresh_token?: string }>("/auth/login", {
       method: "POST",
       body: JSON.stringify({ email, password }),
     });
+    const access = res.access_token || res.token || "";
+    if (access && typeof window !== "undefined") {
+      localStorage.setItem("access_token", access);
+      if (res.refresh_token) localStorage.setItem("refresh_token", res.refresh_token);
+    }
+    return { access_token: access, refresh_token: res.refresh_token || "" };
+  };
 
   register = (data: { email: string; password: string; full_name: string; badge_number?: string }) =>
     this.request("/auth/register", { method: "POST", body: JSON.stringify(data) });
@@ -47,15 +54,16 @@ class ApiClient {
     this.request("/auth/forgot-password", { method: "POST", body: JSON.stringify({ email }) });
 
   // Cases
-  getCases = (params?: { status?: string; priority?: string }) => {
+  getCases = async (params?: { status?: string; priority?: string }) => {
     const q = new URLSearchParams(params as Record<string, string>).toString();
-    return this.request<Case[]>(`/cases/${q ? `?${q}` : ""}`);
+    const res = await this.request<any>(`/cases/${q ? `?${q}` : ""}`);
+    return Array.isArray(res) ? res : (res?.content || []);
   };
 
   getCase = (id: number) => this.request<Case>(`/cases/${id}`);
 
   createCase = (data: Partial<Case>) =>
-    this.request<Case>("/cases/", { method: "POST", body: JSON.stringify(data) });
+    this.request<Case>("/cases", { method: "POST", body: JSON.stringify(data) });
 
   updateCase = (id: number, data: Partial<Case>) =>
     this.request<Case>(`/cases/${id}`, { method: "PUT", body: JSON.stringify(data) });

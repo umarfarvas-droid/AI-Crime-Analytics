@@ -70,7 +70,7 @@ docker run -d \
 sleep 5
 
 # Initialize database
-psql -h localhost -U postgres -d crime_analytics < database/init.sql
+psql -h localhost -U postgres -d crime_analytics < backend/database/init.sql
 ```
 
 ### 3. Setup Backend
@@ -82,11 +82,11 @@ cd ai-crime-analytics
 mvn clean install
 
 # Run with development profile
-mvn spring-boot:run -Dspring-boot.run.arguments="--spring.profiles.active=dev"
+mvn spring-boot:run -pl backend -Dspring-boot.run.arguments="--spring.profiles.active=dev"
 
 # Or run the JAR directly
 mvn clean package -DskipTests
-java -jar target/ai-crime-analytics-1.0.0.jar
+java -jar backend/target/ai-crime-analytics-1.0.0.jar
 ```
 
 Backend will be available at: **http://localhost:8080/api**

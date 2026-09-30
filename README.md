@@ -23,45 +23,45 @@ AI-powered decision-support platform for crime investigators. Analyzes FIRs, evi
 | Layer | Technologies |
 |-------|-------------|
 | Frontend | Next.js 14, React, TypeScript, Tailwind CSS, ShadCN UI |
-| Backend | Python FastAPI, SQLAlchemy, Pydantic |
-| AI/ML | LangChain, OpenAI GPT, spaCy, Sentence Transformers, ChromaDB |
-| OCR | Tesseract, EasyOCR, python-docx, PyPDF2 |
-| Databases | PostgreSQL, MongoDB, Redis, ChromaDB |
-| Auth | JWT, bcrypt, RBAC |
+| Backend | Java 21 / Spring Boot 3.x, Spring Web, Spring Security, Spring Data JPA, Hibernate, Maven |
+| AI/ML | OpenAI GPT API, Semantic RAG & Video Forensics Pipeline |
+| OCR / Docs | Apache PDFBox, Apache POI, Tess4J, OpenPDF |
+| Databases | PostgreSQL, MongoDB, Redis, H2 / PostgreSQL compatible |
+| Auth | Spring Security, JWT, BCrypt, RBAC |
 
 ## Quick Start
 
 ### Prerequisites
 
 - Docker & Docker Compose
-- Node.js 20+ (local dev)
-- Python 3.11+ (local dev)
+- Node.js 20+ (local frontend dev)
+- Java 17/21 & Maven 3.9+ (local backend dev)
 
 ### With Docker (Recommended)
 
 ```bash
 cp .env.example .env
-docker-compose up -d
+docker compose up -d
 ```
 
 - Frontend: http://localhost:3000
-- Backend API: http://localhost:8000
-- API Docs: http://localhost:8000/docs
+- Backend API: http://localhost:8080
+- API Health: http://localhost:8080/health
 
 ### Local Development
 
-**Backend:**
+**Backend (Java Spring Boot):**
 
 ```bash
-Admin@123
-uvicorn app.main:app --reload --port 8000y
-source venv/bin/activate  # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-python -m spacy download en_core_web_sm
-uvicorn app.main:app --reload --port 8000
+# Build and run with Maven
+mvn clean package -DskipTests
+java -jar backend/target/ai-crime-analytics-1.0.0.jar
+
+# Or run directly via Spring Boot Maven plugin
+mvn spring-boot:run -pl backend
 ```
 
-**Frontend:**cd
+**Frontend:**
 
 ```bash
 cd frontend
@@ -80,16 +80,16 @@ npm run dev
 ## Project Structure
 
 ```
-├── backend/                 # FastAPI application
-│   ├── app/
-│   │   ├── api/            # REST endpoints
-│   │   ├── ai/             # AI/ML pipeline
-│   │   ├── core/           # Config, security, deps
-│   │   ├── models/         # SQLAlchemy models
-│   │   ├── schemas/        # Pydantic schemas
-│   │   └── services/       # Business logic
-│   ├── database/           # SQL init scripts
-│   └── tests/
+├── backend/                 # Spring Boot application
+│   ├── pom.xml             # Maven backend configuration
+│   ├── src/
+│   │   ├── main/java/com/crime/analytics/
+│   │   │   ├── ai/         # AI services & RAG pipeline
+│   │   │   ├── api/        # REST controllers & DTOs
+│   │   │   ├── core/       # Security, JWT, config
+│   │   │   └── models/     # JPA entities & repositories
+│   │   └── main/resources/ # application.yml & templates
+│   └── database/           # SQL init scripts
 ├── frontend/               # Next.js application
 │   ├── src/
 │   │   ├── app/           # App router pages
@@ -99,6 +99,7 @@ npm run dev
 │   └── public/
 ├── docs/                   # Documentation
 ├── samples/                # Sample datasets
+├── pom.xml                 # Root Maven aggregator
 └── docker-compose.yml
 ```
 

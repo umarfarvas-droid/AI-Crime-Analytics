@@ -1,5 +1,5 @@
-# Frontend Dockerfile for Next.js application
-FROM node:18-alpine as builder
+# Multi-stage build for Vite React frontend
+FROM node:18-alpine AS builder
 
 WORKDIR /app
 
@@ -12,34 +12,24 @@ RUN npm ci
 # Copy source code
 COPY . .
 
-# Build Next.js application
+# Build Vite application
 RUN npm run build
 
-# Production stage
-FROM node:18-alpine
+# Production stage using Nginx
+FROM nginx:alpine
 
-WORKDIR /app
+# Copy built application from builder stage
+COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Copy package files
-COPY package*.json ./
-
-# Install production dependencies only
-RUN npm ci --only=production
-
-# Copy built application from builder
-COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/public ./public
-
-# Expose port
+# Expose port 3000
 EXPOSE 3000
 
-# Environment
-ENV NODE_ENV=production
-ENV NEXT_TELEMETRY_DISABLED=1
+# Configure Nginx for SPA routing on port 3000
+RUN printf 'server {\n    listen 3000;\n    server_name localhost;\n    root /usr/share/nginx/html;\n    index index.html;\n    location / {\n        try_files $uri $uri/ /index.html;\n    }\n}\n' > /etc/nginx/conf.d/default.conf
 
 # Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-    CMD wget --quiet --tries=1 --spider http://localhost:3000/health || exit 1
+HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=3 \
+    CMD wget --quiet --tries=1 --spider http://localhost:3000/ || exit 1
 
-# Start application
-CMD ["npm", "start"]
+# Start Nginx
+CMD ["nginx", "-g", "daemon off;"]

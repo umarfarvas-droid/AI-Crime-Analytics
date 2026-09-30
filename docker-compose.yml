@@ -13,7 +13,7 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./backend/database/init.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
       - crime-analytics-network
     healthcheck:
@@ -47,13 +47,13 @@ services:
       - ./logs:/var/log/ai-crime-analytics
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 40s
 
-  # Frontend (Next.js)
+  # Frontend (React + Vite)
   frontend:
     build:
       context: ./frontend
@@ -63,6 +63,7 @@ services:
       - "3000:3000"
     environment:
       NEXT_PUBLIC_API_URL: http://localhost:8080/api
+      VITE_API_URL: http://localhost:8080/api
     depends_on:
       - backend
     networks:

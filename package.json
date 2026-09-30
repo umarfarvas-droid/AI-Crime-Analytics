@@ -1,0 +1,17 @@
+{
+  "name": "ai-crime-analytics-root",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AI Crime Analytics & Investigation Assistant",
+  "scripts": {
+    "dev": "npm run dev --prefix frontend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "java -jar backend/target/ai-crime-analytics-1.0.0.jar",
+    "build": "npm run build --prefix frontend",
+    "build:frontend": "npm run build --prefix frontend",
+    "build:backend": "mvn clean package -DskipTests",
+    "install:frontend": "npm install --prefix frontend",
+    "test:benchmarks": "node run_benchmark.js"
+  }
+}

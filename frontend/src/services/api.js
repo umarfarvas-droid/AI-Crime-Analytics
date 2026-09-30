@@ -80,7 +80,7 @@ export const casesApi = {
   },
   getAllCases: async () => {
     const response = await apiClient.get('/v1/cases');
-    return response.data;
+    return Array.isArray(response.data) ? response.data : (response.data?.content || []);
   },
   getCaseById: async (id) => {
     const response = await apiClient.get(`/v1/cases/${id}`);

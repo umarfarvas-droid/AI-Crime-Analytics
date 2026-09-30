@@ -158,7 +158,7 @@ This project has been converted from Python to Java using Spring Boot framework 
    psql -U postgres -c "CREATE DATABASE crime_analytics;"
    
    # Run migrations
-   psql -U postgres -d crime_analytics < database/init.sql
+   psql -U postgres -d crime_analytics < backend/database/init.sql
    ```
 
 3. **Frontend Setup**
@@ -314,7 +314,7 @@ For manual migrations, use Liquibase or Flyway (to be added to future versions).
 
 ```bash
 mvn clean package -Pprod
-java -jar target/ai-crime-analytics-1.0.0.jar
+java -jar backend/target/ai-crime-analytics-1.0.0.jar
 ```
 
 ### Docker Deployment
